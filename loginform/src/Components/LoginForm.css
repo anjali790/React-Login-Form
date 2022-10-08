@@ -1,0 +1,201 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    background-color: #0b4b54;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	margin-top: 200px;
+	height: 100vh;
+	text-align: center;
+}
+
+.container form fieldset, .logoutDiv {
+	background-color: #F9D1D1;
+	width: 500px;
+	height: 300px;
+	box-shadow: 4px 5px 5px black;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.container fieldset h1, .welcomeHeading {
+	margin: 0px 5px;
+	color: #0b4b54;
+	font-size: 35px;
+	font-weight: bolder;
+	margin-top: 28px;
+}
+
+.usernameDiv,
+.passwordDiv,
+.btnDiv {
+	margin: 30px 0px;
+	color: #0b4b54;
+	font-weight: bold;
+}
+
+fieldset .input{
+	font-size: 20px;
+	margin: 0px 10px;
+	outline-style: none;
+	padding: 5px;
+}
+
+.btnDiv .btn, .logoutBtn{
+	width: 300px;
+	font-size: 20px;
+	padding: 8px 0px;
+	font-weight: bold;
+	color: #0b4b54;
+	border-radius: 5px;
+	background-color: #0b4b54;
+	color: aliceblue;
+	border: none;
+	cursor: pointer;
+}
+
+.btnDiv .btn:hover{
+	background-color:aliceblue;
+	color: #0b4b54;
+}
+
+.container .logoutDiv .logoutBtn{
+	margin-top: 50px;
+}
