@@ -44,19 +44,19 @@ export function Login() {
                 <form onSubmit={submit}>
                     <fieldset>
                         <div className="usernameDiv">
-                            <label htmlFor="name" className="input">Name :</label>
+                            <label htmlFor="name" className="input">Name</label>
                             <input type="text" name="name" id="name" className='inputName input' value={name} onChange={(e) => {
                                 setName(e.target.value)
                             }} />
                         </div>
                         <div className="usernameDiv">
-                            <label htmlFor="email" className="input">Email :</label>
+                            <label htmlFor="email" className="input">Email</label>
                             <input type="text" name="email" id="email" className='inputName input' value={email} onChange={(e) => {
                                 setEmail(e.target.value)
                             }} />
                         </div>
                         <div className="passwordDiv">
-                            <label htmlFor="password" className="input">Password :</label>
+                            <label htmlFor="password" className="input">Password</label>
                             <input type="password" name="password" id="password" className='inputName input' value={password} onChange={(e) => {
                                 setPassword(e.target.value)
                             }} />

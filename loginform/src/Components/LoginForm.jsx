@@ -28,22 +28,22 @@ export function LoginForm() {
         e.preventDefault();
         console.log({ userName, password });
         if (isAlreadyExist(userName, password)) {
-            loginUser(userName, password)
+            loginUser(userName, password);
         } else {
-            signup(userName, password)
+            signup(userName, password);
         }
     }
 
     const isAlreadyExist = (username, password) => {
         let users = localStorage.getItem('users')
         if (users) {
-            users = JSON.parse(users)
+            users = JSON.parse(users);
 
             let filtered_user = users.filter((user) => user['userName'] === username && user['password'] === password)
             if (filtered_user.length > 0) {
-                return true
+                return true;
             }
-            return false
+            return false;
         }
     }
 
@@ -53,8 +53,7 @@ export function LoginForm() {
             'userName': username,
         }
         localStorage.setItem('loggedInUser', JSON.stringify(loggedInUser))
-        setLoggedInUser(loggedInUser)
-
+        setLoggedInUser(loggedInUser);
     }
 
     const signup = (username, password) => {
@@ -62,7 +61,7 @@ export function LoginForm() {
         if (users) {
             users = JSON.parse(users);
         } else {
-            users = []
+            users = [];
         }
 
         users.push({
@@ -74,10 +73,10 @@ export function LoginForm() {
     }
 
     const handleLogout = () => {
-        setLoggedInUser(null)
+        setLoggedInUser(null);
         localStorage.setItem('loggedInUser', null)
-        setUserName("")
-        setPassword("")
+        setUserName("");
+        setPassword("");
     }
 
     return (
